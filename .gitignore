@@ -1,0 +1,4 @@
+CV_Train/
+CV_Test/
+checkpoints/
+wandb/
