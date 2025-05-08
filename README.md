@@ -13,63 +13,12 @@ A simple computer vision project for classifying human actions in images using P
 
 ## Installation
 
-### Requirements
 
-- Python 3.8+
-- PyTorch 1.10+
-- CUDA (optional, for GPU acceleration)
-
-### Setup
-
-1. **Clone this repository**:
    ```bash
-   git clone https://github.com/yourusername/action-classification-cnn.git
-   cd action-classification-cnn
+   git clone https://github.com/Topasm/Computer_vision.git
+   cd Computer_vision
    ```
 
-2. **Set up a Python virtual environment (optional but recommended)**:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install required packages**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Required Packages
-
-Create a `requirements.txt` file with the following content:
-
-```
-torch>=1.10.0
-torchvision>=0.11.0
-numpy>=1.20.0
-matplotlib>=3.4.0
-scikit-learn>=1.0.0
-Pillow>=8.0.0
-wandb>=0.12.0
-tqdm>=4.62.0
-```
-
-## Data Preparation
-
-This project works with image datasets annotated in LabelMe JSON format. The expected structure is:
-
-```
-Dataset/
-├── Images/
-│   ├── 000000.png
-│   ├── 000001.png
-│   └── ...
-└── Labels/
-    ├── 000000.json
-    ├── 000001.json
-    └── ...
-```
-
-Each JSON file should contain shape annotations with a "label" field indicating one of the action classes: "standing", "sitting", "lying", or "throwing".
 
 ## Usage
 
@@ -121,22 +70,8 @@ After evaluation, you can find:
 - Visualizations in `test_outputs/visualizations/`
 - Confusion matrix in `test_outputs/confusion_matrix.png`
 
-## Model Architecture
-
-The project uses a simple CNN architecture with the following structure:
-
-- 3 convolutional layers with ReLU activation and max pooling
-- Fully connected layers for classification
-- Cross-entropy loss function
-- Adam optimizer
 
 You can modify the architecture in `models.py`.
-
-## Customization
-
-### Changing the number of classes
-
-To change the number of classes, modify `NUM_CLASSES` in `train.py` and update the class mapping in `dataset.py`.
 
 ### Using a different model architecture
 
@@ -146,27 +81,7 @@ Modify `models.py` to implement a different architecture. The `ActionModel` clas
 
 Add transformations to the `transform` variable in `train.py` to include data augmentation techniques.
 
-## Troubleshooting
 
-### CUDA out of memory
-
-If you encounter GPU memory issues:
-1. Reduce `BATCH_SIZE` in `train.py`
-2. Use a smaller model by modifying `ActionModel` in `models.py`
-
-### Missing labels
-
-If your evaluation shows "Warning: GT label file not found", check that your JSON files have the same base names as your image files.
-
-## License
-
-[MIT License](LICENSE)
-
-## Acknowledgments
-
-- PyTorch team for the deep learning framework
-- Weights & Biases for visualization tools
-- LabelMe for the annotation format
 
 Epoch [46/50], Train Loss: 0.0269, Train Acc: 99.58%, Val Loss: 2.1714, Val Acc: 60.00%
 Epoch [47/50], Train Loss: 0.0327, Train Acc: 98.33%, Val Loss: 2.1821, Val Acc: 60.00%
