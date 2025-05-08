@@ -81,10 +81,3 @@ Modify `models.py` to implement a different architecture. The `ActionModel` clas
 
 Add transformations to the `transform` variable in `train.py` to include data augmentation techniques.
 
-
-
-Epoch [46/50], Train Loss: 0.0269, Train Acc: 99.58%, Val Loss: 2.1714, Val Acc: 60.00%
-Epoch [47/50], Train Loss: 0.0327, Train Acc: 98.33%, Val Loss: 2.1821, Val Acc: 60.00%
-Epoch [48/50], Train Loss: 0.0164, Train Acc: 99.58%, Val Loss: 2.1874, Val Acc: 60.00%
-Epoch [49/50], Train Loss: 0.0169, Train Acc: 99.58%, Val Loss: 2.1931, Val Acc: 60.00%
-Epoch [50/50], Train Loss: 0.0233, Train Acc: 99.17%, Val Loss: 2.1983, Val Acc: 60.00%
