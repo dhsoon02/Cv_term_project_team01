@@ -14,15 +14,15 @@ from models import ResNetActionModel
 
 # Define constants
 NUM_CLASSES = 4  # standing, sitting, lying, throwing
-BATCH_SIZE = 16  # Adjust based on your GPU memory
-EPOCHS = 50  # Adjust as needed
+BATCH_SIZE = 128  # Adjust based on your GPU memory
+EPOCHS = 500  # Adjust as needed
 LEARNING_RATE = 0.001
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 TRAIN_IMG_DIR = "CV_Train/Images"
 TRAIN_LABEL_DIR = "CV_Train/Labels"
 CHECKPOINT_DIR = "checkpoints"  # Directory to save checkpoints
-SAVE_INTERVAL = 5  # Save a checkpoint every N epochs
-RESNET_TYPE = 18  # 18, 34, 50, 101, or 152
+SAVE_INTERVAL = 100  # Save a checkpoint every N epochs
+RESNET_TYPE = 34  # 18, 34, 50, 101, or 152
 MODEL_NAME = f"resnet{RESNET_TYPE}_action"  # Used for saving models
 
 # Create checkpoint directory if it doesn't exist
