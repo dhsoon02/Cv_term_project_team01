@@ -50,10 +50,24 @@ Run the entire training and evaluation pipeline automatically:
 
 ## Scripts Description
 
-- **convert_to_yolo.py**: Converts the dataset from JSON format to YOLO format
-- **train_yolo.py**: Trains a YOLO model on the converted dataset
-- **evaluate_yolo.py**: Evaluates the trained model on test images
-- **run_yolo_pipeline.sh**: Automates the entire workflow
+
+- **convert_label_to_yolo.py**  
+  Converts LabelMe-style JSON annotations to YOLO format.
+
+- **gen_action_crops.py**  
+  Generates cropped human action images for classification.
+
+- **train_yolo.py**  
+  Trains a YOLO model on the person-detection dataset.
+
+- **train_mobilenetv3.py**  
+  Trains a MobileNetV3 model for action classification.
+
+- **gen_submission_json.py**  
+  Runs YOLO detection + classification and generates submission JSONs.
+
+- **run_all.sh**  
+  Automates the entire pipeline from preprocessing to final submission.
 
 ## Dataset Structure
 
