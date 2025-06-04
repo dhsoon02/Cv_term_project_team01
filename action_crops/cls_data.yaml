@@ -1,5 +1,0 @@
-        train: /root/dev/Computer_vision_new/action_crops/train.txt
-        val: /root/dev/Computer_vision_new/action_crops/val.txt
-        nc: 4
-        names: ['standing', 'sitting', 'lying', 'throwing']
-        
