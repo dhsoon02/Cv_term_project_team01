@@ -6,29 +6,44 @@ This project implements action detection (standing, sitting, lying, throwing) us
 
 1. Install the required packages:
    ```
-   pip install ultralytics opencv-python matplotlib torch wandb
+   pip install ultralytics opencv-python matplotlib torch timm wandb
    ```
 
-2. Convert the dataset to YOLO format:
+2. Convert LabelMe JSON to YOLO Format:
    ```
-   python convert_to_yolo.py
-   ```
-
-3. Train the YOLO model:
-   ```
-   python train_yolo.py --model yolov8n.pt --epochs 50
+   python convert_label_to_yolo.py
    ```
 
-4. Evaluate the trained model:
+3. Generate Action Classification Crops:
    ```
-   python evaluate_yolo.py --model yolo_runs/run1/weights/best.pt
+   python gen_action_crops.py
+   ```
+
+4. Train YOLOv8 Detection Model:
+   ```
+   python train_yolo.py
+   ```
+
+5. Train MobileNetV3 Action Classifier:
+   ```
+   python train_mobilenetv3.py
+   ```
+
+6. Run Inference and Generate Submission JSONs:
+   ```
+   python gen_submission_json.py
+   ```
+
+7. Create zip file for Submission
+   ```
+   zip -r submission_json.zip submission_json
    ```
 
 ## Automated Pipeline
 
 Run the entire training and evaluation pipeline automatically:
 ```
-./run_yolo_pipeline.sh
+./run_all.sh
 ```
 
 ## Scripts Description
