@@ -1,0 +1,95 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "standing",
+            "points": [
+                [
+                    191.0,
+                    129.0
+                ],
+                [
+                    217.0,
+                    176.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "standing",
+            "points": [
+                [
+                    290.0,
+                    12.0
+                ],
+                [
+                    311.0,
+                    58.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "standing",
+            "points": [
+                [
+                    425.0,
+                    241.0
+                ],
+                [
+                    461.0,
+                    304.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "standing",
+            "points": [
+                [
+                    440.0,
+                    125.0
+                ],
+                [
+                    463.0,
+                    183.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "throwing",
+            "points": [
+                [
+                    237.0,
+                    72.0
+                ],
+                [
+                    265.0,
+                    123.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "000247.png",
+    "imageData": null,
+    "imageHeight": 345,
+    "imageWidth": 640
+}

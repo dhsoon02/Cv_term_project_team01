@@ -1,0 +1,95 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "standing",
+            "points": [
+                [
+                    153.0,
+                    33.0
+                ],
+                [
+                    175.0,
+                    89.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "standing",
+            "points": [
+                [
+                    199.0,
+                    61.0
+                ],
+                [
+                    230.0,
+                    116.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "lying",
+            "points": [
+                [
+                    380.0,
+                    265.0
+                ],
+                [
+                    442.0,
+                    311.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "standing",
+            "points": [
+                [
+                    303.0,
+                    112.0
+                ],
+                [
+                    321.0,
+                    160.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "sitting",
+            "points": [
+                [
+                    244.0,
+                    193.0
+                ],
+                [
+                    283.0,
+                    238.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "001484.png",
+    "imageData": null,
+    "imageHeight": 345,
+    "imageWidth": 640
+}

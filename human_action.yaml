@@ -1,0 +1,6 @@
+# human_action.yaml
+path: dataset_yolo_only_person  
+train: images/train
+val:   images/val
+nc: 1
+names: ['person']

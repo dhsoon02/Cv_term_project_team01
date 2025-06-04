@@ -1,0 +1,129 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "sitting",
+            "points": [
+                [
+                    136.0,
+                    171.0
+                ],
+                [
+                    257.0,
+                    341.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "standing",
+            "points": [
+                [
+                    529.0,
+                    29.0
+                ],
+                [
+                    582.0,
+                    186.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "sitting",
+            "points": [
+                [
+                    426.0,
+                    76.0
+                ],
+                [
+                    480.0,
+                    185.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "standing",
+            "points": [
+                [
+                    164.0,
+                    61.0
+                ],
+                [
+                    222.0,
+                    221.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "standing",
+            "points": [
+                [
+                    542.0,
+                    74.0
+                ],
+                [
+                    639.0,
+                    342.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "sitting",
+            "points": [
+                [
+                    485.0,
+                    82.0
+                ],
+                [
+                    539.0,
+                    134.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "standing",
+            "points": [
+                [
+                    592.0,
+                    0.0
+                ],
+                [
+                    639.0,
+                    139.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "002383.png",
+    "imageData": null,
+    "imageHeight": 345,
+    "imageWidth": 640
+}

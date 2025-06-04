@@ -1,0 +1,44 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "sitting",
+            "points": [
+                [
+                    14.0,
+                    134.0
+                ],
+                [
+                    135.0,
+                    341.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "sitting",
+            "points": [
+                [
+                    158.0,
+                    128.0
+                ],
+                [
+                    281.0,
+                    330.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "002109.png",
+    "imageData": null,
+    "imageHeight": 345,
+    "imageWidth": 640
+}

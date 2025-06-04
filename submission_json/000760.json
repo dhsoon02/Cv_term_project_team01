@@ -1,0 +1,95 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "throwing",
+            "points": [
+                [
+                    305.0,
+                    99.0
+                ],
+                [
+                    340.0,
+                    167.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "standing",
+            "points": [
+                [
+                    401.0,
+                    147.0
+                ],
+                [
+                    432.0,
+                    217.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "throwing",
+            "points": [
+                [
+                    96.0,
+                    194.0
+                ],
+                [
+                    157.0,
+                    294.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "throwing",
+            "points": [
+                [
+                    386.0,
+                    207.0
+                ],
+                [
+                    446.0,
+                    301.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "standing",
+            "points": [
+                [
+                    0.0,
+                    109.0
+                ],
+                [
+                    24.0,
+                    196.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "000760.png",
+    "imageData": null,
+    "imageHeight": 345,
+    "imageWidth": 640
+}

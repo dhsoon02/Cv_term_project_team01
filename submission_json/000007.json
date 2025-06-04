@@ -1,0 +1,27 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "standing",
+            "points": [
+                [
+                    257.0,
+                    179.0
+                ],
+                [
+                    356.0,
+                    338.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "000007.png",
+    "imageData": null,
+    "imageHeight": 345,
+    "imageWidth": 640
+}

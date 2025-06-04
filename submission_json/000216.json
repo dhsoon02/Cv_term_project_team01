@@ -1,0 +1,44 @@
+{
+    "version": "5.2.1",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "throwing",
+            "points": [
+                [
+                    281.0,
+                    171.0
+                ],
+                [
+                    360.0,
+                    308.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "standing",
+            "points": [
+                [
+                    572.0,
+                    0.0
+                ],
+                [
+                    592.0,
+                    42.0
+                ]
+            ],
+            "group_id": null,
+            "description": "",
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "000216.png",
+    "imageData": null,
+    "imageHeight": 345,
+    "imageWidth": 640
+}

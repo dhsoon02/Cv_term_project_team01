@@ -1,83 +1,56 @@
-# Action Classification CNN
+# YOLO Action Detection
 
-A simple computer vision project for classifying human actions in images using PyTorch and Convolutional Neural Networks. This project provides functionality for training, evaluating, and visualizing action classification models with built-in checkpointing and Weights & Biases integration.
+This project implements action detection (standing, sitting, lying, throwing) using YOLOv8 and the Ultralytics library.
 
-## Features
+## Setup
 
-- Simple CNN architecture for image classification
-- Automatic 80/20 train/test data splitting
-- Training with visualization through Weights & Biases
-- Checkpoint saving and loading system
-- Detailed evaluation metrics and visualizations
-- Support for LabelMe JSON format annotations
-
-## Installation
-
-
-   ```bash
-   git clone https://github.com/Topasm/Computer_vision.git
-   cd Computer_vision
+1. Install the required packages:
+   ```
+   pip install ultralytics opencv-python matplotlib torch wandb
    ```
 
+2. Convert the dataset to YOLO format:
+   ```
+   python convert_to_yolo.py
+   ```
 
-## Usage
+3. Train the YOLO model:
+   ```
+   python train_yolo.py --model yolov8n.pt --epochs 50
+   ```
 
-### 1. Split your dataset into train and test sets
+4. Evaluate the trained model:
+   ```
+   python evaluate_yolo.py --model yolo_runs/run1/weights/best.pt
+   ```
 
-```bash
-python split_dataset.py --source-img-dir /path/to/images --source-label-dir /path/to/labels
+## Automated Pipeline
+
+Run the entire training and evaluation pipeline automatically:
+```
+./run_yolo_pipeline.sh
 ```
 
-This will create `CV_Train` and `CV_Test` directories with an 80/20 split.
+## Scripts Description
 
-### 2. Train the model
+- **convert_to_yolo.py**: Converts the dataset from JSON format to YOLO format
+- **train_yolo.py**: Trains a YOLO model on the converted dataset
+- **evaluate_yolo.py**: Evaluates the trained model on test images
+- **run_yolo_pipeline.sh**: Automates the entire workflow
 
-```bash
-python train.py
-```
+## Dataset Structure
 
-This will:
-- Create an 80/20 split if not already done
-- Train the CNN model
-- Save checkpoints to the `checkpoints/` directory
-- Log training metrics to Weights & Biases
+The dataset contains images with bounding boxes for four action classes:
+- standing
+- sitting
+- lying 
+- throwing
 
-For the first time using Weights & Biases, you'll need to authenticate:
-```bash
-wandb login
-```
+## Model Options
 
-### 3. Evaluate the model
-
-```bash
-# Use the default model path
-python evaluation.py
-
-# Use the best model from training
-python evaluation.py --best
-
-# List all available checkpoints
-python evaluation.py --list-checkpoints
-
-# Use a specific checkpoint
-python evaluation.py --model checkpoints/model_epoch_25.pth
-```
-
-### 4. Explore the results
-
-After evaluation, you can find:
-- Text results in `test_outputs/results.txt`
-- Visualizations in `test_outputs/visualizations/`
-- Confusion matrix in `test_outputs/confusion_matrix.png`
-
-
-You can modify the architecture in `models.py`.
-
-### Using a different model architecture
-
-Modify `models.py` to implement a different architecture. The `ActionModel` class should implement the PyTorch `nn.Module` interface.
-
-### Adding data augmentation
-
-Add transformations to the `transform` variable in `train.py` to include data augmentation techniques.
-
+You can choose from various YOLOv8 model sizes:
+- yolov8n.pt (nano) - fastest but less accurate
+- yolov8s.pt (small)
+- yolov8m.pt (medium)
+- yolov8l.pt (large)
+- yolov8x.pt (xlarge) - slowest but most accurate
