@@ -2,7 +2,7 @@
 
 This project implements action detection (standing, sitting, lying, throwing) using YOLOv8 and the Ultralytics library.
 
-Adjust script arguments (e.g., `--epochs`, `--model`, `--device`) as needed based on your setup and performance requirements!
+Adjust script arguments (e.g., `--epochs`, `--model`, `--device`, other path... ) as needed based on your setup and performance requirements!
 
 ## Setup
 
